@@ -33,7 +33,7 @@ architecture behavioral of controller is
 	signal round_constant : std_logic_vector(7 downto 0);
 begin
 	counter : process(clk) is
-		variable i : integer range 0 to (2**4) - 1 := 0;
+		variable i : integer range 0 to 10 := 0;
 	begin
 		if rising_edge(clk) then 
 			if (rst = '0') then
